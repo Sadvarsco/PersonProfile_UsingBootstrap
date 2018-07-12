@@ -1,49 +1,52 @@
 /*=====general purpose utility classes==*/
 
-
-#profilepic{
+#profilepic {
   max-width: 100%;
 }
-.aboutme{
 
-    vertical-align: text-top;
-}
-.heading{
-    vertical-align: text-top;
-    text-align: center;
-    font-size: medium;
+.aboutme {
+  vertical-align: text-top;
 }
 
-.footer{
-    background: rgb(75, 75, 75);
-    color: white;
-    line-height: 4em;
-    padding: 0 1.5em;
+.heading {
+  vertical-align: text-top;
+  text-align: center;
+  font-size: medium;
 }
 
-span.email{
-    width:1.5em;
-    height:1.5em;
-    margin: 0%;
-    content:url("../images/email-icon.png");
-}
-span.github{
-  width:5.5em;
-  height:5.5em;
-  content:url("../images/github.svg");
-}
-span.linkedin{
-  width:4.3em;
-  height:4.3em;
-  content:url("../images/linkedin.png");
-}
-span.instagram{
-  width:4.7em;
-  height:4.7em;
-  content:url("../images/instagram.png");
+.footer {
+  background: rgb(75, 75, 75);
+  color: white;
+  line-height: 4em;
+  padding: 0 1.5em;
 }
 
-button{
+span.email {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0%;
+  content: url("../images/email-icon.png");
+}
+
+span.github {
+  width: 5.5em;
+  height: 5.5em;
+  content: url("../images/github.svg");
+}
+
+span.linkedin {
+  width: 4.3em;
+  height: 4.3em;
+  content: url("../images/linkedin.png");
+}
+
+span.instagram {
+  width: 4.7em;
+  height: 4.7em;
+  content: url("../images/instagram.png");
+}
+
+button {
   margin-left: 40%;
 }
 
@@ -53,8 +56,7 @@ button{
 
 /*----------Grid------------*/
 
-.container-fluid
-{
+.container-fluid {
   width: 100%;
 }
 
@@ -64,19 +66,23 @@ span {
   position: relative;
   z-index: 1;
 }
+
 /* html {
   font-size: 62.5%;
 } */
 
-a{
-    color: white;
+a {
+  color: white;
 }
-a:hover{
+
+a:hover {
   color: blue;
 }
-a:active{
+
+a:active {
   color: gray;
 }
+
 body {
   line-height: 1.6;
   font-weight: 400;
@@ -88,7 +94,6 @@ body {
   padding: 0 1em;
 }
 
-
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -98,7 +103,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-left:3rem;
+  margin-left: 3rem;
   /* margin-bottom: 2rem; */
   font-weight: 300;
 }
@@ -139,8 +144,9 @@ h6 {
   line-height: 1.6;
   letter-spacing: 0;
 }
+
 p {
-  margin:.5rem;
+  margin: .5rem;
   /* font-weight: 300;
   font-size: 1.5rem;
   line-height: 1.6;
@@ -149,14 +155,72 @@ p {
 
 /* Some Screen Specific settings
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Mobile Phone */
+/* Portrait and Landscape */
 
-@media screen and (min-width: 24.15em) { /* 21em "gate" * 1.15 font-size */
-  p { line-height: calc(1.3em + (1.5 - 1.3) * ((100vw - 21em) / (35 - 21))); }
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  p {
+    line-height: calc(1.3em + (1.5 - 1.3) * ((100vw - 21em) / (35 - 21)));
+  }
 }
-@media (min-width: 40.25em) { /* 35em "gate" * 1.15 font-size */
-  p { line-height: 1.5em; }
+
+/* Portrait */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  p {
+    line-height: calc(1.3em + (1.5 - 1.3) * ((100vw - 21em) / (35 - 21)));
+  }
 }
-#repolist{
+
+/* Landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  p {
+    line-height: calc(1.3em + (1.5 - 1.3) * ((100vw - 21em) / (35 - 21)));
+  }
+}
+
+/* ----------- Tablet ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+p {
+  line-height: 1.5em;
+}
+
+/* Portrait */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  p {
+    line-height: 1.5em;
+  }
+}
+
+/* Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  p {
+    line-height: 1.5em;
+  }
+}
+
+@media screen and (min-width: 24.15em) {
+  /* 21em "gate" * 1.15 font-size */
+  p {
+    line-height: calc(1.3em + (1.5 - 1.3) * ((100vw - 21em) / (35 - 21)));
+  }
+}
+/* Laptop/regular screens */
+@media (min-width: 40.25em) {
+  /* 35em "gate" * 1.15 font-size */
+  p {
+    line-height: 1.5em;
+  }
+}
+
+#repolist {
   color: black;
   text-align: left;
   margin: 1rem;
