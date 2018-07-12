@@ -1,0 +1,163 @@
+/*=====general purpose utility classes==*/
+
+
+#profilepic{
+  max-width: 100%;
+}
+.aboutme{
+
+    vertical-align: text-top;
+}
+.heading{
+    vertical-align: text-top;
+    text-align: center;
+    font-size: medium;
+}
+
+.footer{
+    background: rgb(75, 75, 75);
+    color: white;
+    line-height: 4em;
+    padding: 0 1.5em;
+}
+
+span.email{
+    width:1.5em;
+    height:1.5em;
+    margin: 0%;
+    content:url("../images/email-icon.png");
+}
+span.github{
+  width:5.5em;
+  height:5.5em;
+  content:url("../images/github.svg");
+}
+span.linkedin{
+  width:4.3em;
+  height:4.3em;
+  content:url("../images/linkedin.png");
+}
+span.instagram{
+  width:4.7em;
+  height:4.7em;
+  content:url("../images/instagram.png");
+}
+
+button{
+  margin-left: 40%;
+}
+
+.jumbotron {
+  color: black;
+}
+
+/*----------Grid------------*/
+
+.container-fluid
+{
+  width: 100%;
+}
+
+span {
+  /* display: flex; */
+  margin: 1rem;
+  position: relative;
+  z-index: 1;
+}
+/* html {
+  font-size: 62.5%;
+} */
+
+a{
+    color: white;
+}
+a:hover{
+  color: blue;
+}
+a:active{
+  color: gray;
+}
+body {
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 1.15em;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  margin: 1em auto;
+  padding: 0 1em;
+}
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-left:3rem;
+  /* margin-bottom: 2rem; */
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 4.0rem;
+  line-height: 1.2;
+  letter-spacing: -.1rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+  letter-spacing: -.1rem;
+}
+
+h3 {
+  font-size: 3.0rem;
+  line-height: 1.3;
+  letter-spacing: -.1rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -.08rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: -.05rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+  margin: 0%;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+p {
+  margin:.5rem;
+  /* font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0; */
+}
+
+/* Some Screen Specific settings
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (min-width: 24.15em) { /* 21em "gate" * 1.15 font-size */
+  p { line-height: calc(1.3em + (1.5 - 1.3) * ((100vw - 21em) / (35 - 21))); }
+}
+@media (min-width: 40.25em) { /* 35em "gate" * 1.15 font-size */
+  p { line-height: 1.5em; }
+}
+#repolist{
+  color: black;
+  text-align: left;
+  margin: 1rem;
+}

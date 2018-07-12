@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sadre Scott: The Computer Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Using Bootstrap for responsive Filter -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="rsc/main.css" />
+    <!--[if IE]><![endif]-->
+    <!--[if lt IE 10]> 
+        <div id="warning">
+<h4 >Your Browser Is Not Supported! Please upgrade!</h4><br />
+</div>
+
+<![endif]-->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <!--[if IE 10]><![endif]-->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left side nav bar, mostly for profile picture. 
+            large screen takes up 33%, medium 50%, small 25%, 100% extra small -->
+            <div class="col-xs-0 col-sm-3 col-md-6 col-lg-4">
+                <div class="imageme">
+                    <img id="profilepic" src="images/me.jpg" />
+                </div>
+            </div>
+            <!-- Main page content, including jumbo tron, an current repo list button
+            large screen takes up 66%, medium 50%, small 75%, 100% extra small -->
+            <div class="col-xs-12 col-sm-9 col-md-6 col-lg-8">
+                <div class="jumbotron jumbotron-fluid" style="margin-top: 4em;">
+                    <h1 class "display-4 ">Sadre Scott </h1>
+                    <p class="font-italic">Computer Engineer, Software Developer, IT Support Analyst, Radio Broadcaster, Photographer</p>
+                    <hr class="my-4 text-primary">
+                    <p>A man of many talents, but my heart yearns for tech.</p>
+                    <!-- Current List of Repos, pulls info button button press, no cache -->
+                    <button class="btn btn-primary btn-lg centered" id="button2" type="button" role="button">List Repos</button>
+                </div>
+                <div>
+                    <!-- Social media link section, opens new window: GitHub, Linkedin, Adobe Portfolio Website -->
+                    <h3 class="align-content-center">Visit My Social Media</h3>
+                    <div class="row button-area align-top" style="margin-left: 27%">
+                        <a href="https://github.com/sadvarsco">
+                            <span class="github"></span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sadre-scott-5b7137133/">
+                            <span class="linkedin"></span>
+                        </a>
+                        <a href="https://dna.myportfolio.com/">
+                            <span class="instagram"></span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <!-- Current list of tech skills -->
+                    <div id="techskills">
+                        <b>
+                            <label for="techskills">Technial Skills</label>
+                        </b>
+                        <ul>
+                            <li>Operating System Knowledge: Windows XP/7/8/10, Linux, Mac OS, Raspbian</li>
+                            <li>Computer Languages: C#/C++, Visual Basic, Python, JavaScript, VHDL, RTL, MIPS, Assembly, HTML,
+                                CSS, PHP, SQL</li>
+                            <li>Radio and Broadcast knowledge. Audio/Video editor, Website design</li>
+                            <li>Event Photography</li>
+
+                        </ul>
+                    </div>
+                    <div>
+                        <!-- current repo list, uses github API to update current repos. Can be updated if repo changes -->
+                        <b>
+                            Repository List
+                        </b>
+                        <div id="githubrepolist">
+                            <ul id="repolist" class="row" style="list-style-type: none;">
+                            </ul>
+                            <button id="button" type="button" class="align-self-center">List Repos</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer, Just contact information -->
+    <div class="card-footer text-muted col-12">
+        <div id="contact">Contact Info
+            <br>
+            <span class="email col-xs-0 col-sm-0">Email</span>:
+            <a href="mailto:Sadre.Scott@gmail.com">Sadre.Scott@gmail.com</a>
+        </div>
+    </div>
+
+    <!-- JQuery, JS. for Social Media animation and Repolist load -->
+    <script src="jquery-3.2.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <script src="rsc/main.js" type="text/javascript"></script>
+</body>
+
+</html>
